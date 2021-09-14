@@ -7,8 +7,8 @@
 body{
     height:100vh;
     margin: 0;
-    font-family: 'Lato' sans-serif;
-    background-image: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(0deg, rgb(247, 157, 157) 23.8%, rgb(252, 221, 221) 92%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@ body{
 .music-container {
     background-color: #fff ;
     border-radius: 15px;
-    box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+    box-shadow: 0 20px 20px 0 rgba(206, 62, 62, 0.6);
     display: flex;
     padding: 20px 30px;
     position: relative;
@@ -141,3 +141,90 @@ body{
     transform: width 0.1s linear;
     
 }
+
+/* body {
+    background: #2b1159;
+    color: #fff;
+    font-family: sans-serif;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+.volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volume input[type=range] {
+    /* display: none; */
+}
+.volume .icon-size {
+    font-size: 2rem;
+}
+.volume .bar-hoverbox {
+    padding: 10px 15px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.volume .bar-hoverbox:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.volume .bar {
+    background: #999;
+    height: 7px;
+    width: 120px;
+    border-radius: 15px;
+    overflow: hidden;
+    pointer-events: none;
+}
+.volume .bar .bar-fill {
+    background: #fff;
+    width: 0%;
+    height: 100%;
+    background-clip: border-box;
+    pointer-events: none;
+}
+    /* input[type='range'] {
+      overflow: hidden;
+      width: 200px;
+      -webkit-appearance: none;
+      background-color: #bd8484;
+      height: 15px;
+      border-radius: 15px;
+    
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #be5151;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 25px;
+      cursor: grab;
+      background: #ffffff;
+      box-shadow: -80px 0 0 80px #e46d6d;
+      border-radius: 15px;
+    }
+
+    .volume .icon-size {
+        font-size: 1rem;
+    }
+.input[type='range']::-webkit-slider-thumb:hover  {
+        --webkit-slider-thumb-transform: scale(3);
+    } */
+
+
+
+
+
+
